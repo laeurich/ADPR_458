@@ -24,6 +24,15 @@ font-size: 1.25rem;
 border-radius: 50%;
 border: 5px solid #9abcf8;
 }
+a:link, a:visited {
+    color: #9abcf8;
+    text-decoration: none;
+}
+a:hover {
+    color: #5794ff;
+    text-decoration: underline;
+}
+
 /* Layout */
 .container {
     background-color: white;
@@ -45,4 +54,21 @@ border: 5px solid #9abcf8;
     .col-span-4 {
         grid-column: span 4;
     }
+}
+
+/* Components */
+.button:link, .button:visited {
+    color: white;
+    background-color: #9abcf8;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    margin: 0 .25rem .25rem 0;
+    transition: background-color 0.5s ease;
+}
+.button:hover {
+    background-color: #5794ff;
 }
